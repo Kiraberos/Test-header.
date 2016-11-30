@@ -29,30 +29,14 @@ img{
     width: 40%;
     float: right;
     position: relative;
-    top: -45px;
-}
+    top: -95px;
+    border: 28px solid transparent;
+    padding: 25px 85px 90px;
 
-.menu_static:before, .menu_static:after {
-  content: "";
-  position: absolute;
-  bottom: -115px;
-  left: -215px;
-}
-.menu_static:before {
-  top: 190px;
-  width: 28px;
-  background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#000), to(transparent));
-  background-image: -webkit-linear-gradient(transparent, #000);
-  background-image: -moz-linear-gradient(transparent, #000);
-  background-image: -o-linear-gradient(transparent, #000);
-}
-.menu_static:after {
-  right: -3px;
-  height: 28px;
-  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#000), to(transparent));
-  background-image: -webkit-linear-gradient(left, #000, transparent);
-  background-image: -moz-linear-gradient(left, #000, transparent);
-  background-image: -o-linear-gradient(left, #000, transparent);
+    -moz-border-image: -moz-linear-gradient(top left , #BEBEBE 0%, #0000FF 100%);
+    -webkit-border-image: -webkit-linear-gradient(top left , #BEBEBE 0%, #0000FF 100%);
+    border-image: linear-gradient(to bottom right , to top left #BEBEBE 20%, #0000FF 100%);
+    border-image-slice: 1 ;
 }
 .info{
     width: 90%;
@@ -60,11 +44,12 @@ img{
 .menu-item_static{
     color: white;
     font-family: 'Arial';
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: 600;
     padding: 3% 4%;
     line-height: 280%;
     transition: all 0.1s ease-out;
+    text-transform: uppercase;
 }
 .menu_static span{
     font-size: 0.8em ;
@@ -87,7 +72,7 @@ img{
     margin: 10% 0;
 }
 .cards{
-    width: 10%;
+    width: 11%;
 }
 .logo{
     color: white;
@@ -95,6 +80,10 @@ img{
     font-size: 1.8em;
     font-family: 'Quicksand', sans-serif ;
     line-height: 34px;
+    text-transform: uppercase;
+}
+.logo span{
+  font-size: 0.8em;
 }
 .card_item_1{
     top: 580px;
@@ -123,7 +112,7 @@ img{
 }
 .prev_price{
     padding-top: 10px;
-    opacity: 0.5;
+    opacity: 0.9;
 }
 .price_item{
     color: #3A5FCD;
@@ -144,30 +133,17 @@ img{
     padding-top: 70px;
 }
 .ready_for_bought{
-    font-size: 1.2em;
+    font-size: 1em;
+    font-weight: bold;
     background-color: #0006f5;
     border-radius: 15px;
     padding: 10px 15px;
     margin-right: 15px;
     color: white;
     transition: all .5s ease-out;
+    text-transform: uppercase;
 }
 .ready_for_bought:hover{
     color:#000080;
     background-color: white;
-}
-
-/* Adaptive */
-@media screen and (max-width:1280px){
-    .menu-item_static{
-        font-size: 0.9em;
-    }
-    
-@media screen and (max-width: 1024px){
-    .menu_static{
-        width: 30%;
-    }
-    .ready_for_bought{
-      padding: 10px 1px;
-    }
 }
